@@ -6,9 +6,11 @@
 
 
 If you want to remove for testing: rm -rf module-a
+Powershell: rm -r -fo .\module-a\
+
 How to clone a project with submodule:
 1 - run git clone the prject
 2 - git submodule update --init --recursive
 3 - simpler solution is to run the following command:
-        git clone --recurs--submodules {repo's url}
+        git clone --recurse-submodules {repo's url}
         
