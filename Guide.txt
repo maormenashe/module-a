@@ -58,3 +58,22 @@ git commit -m "Update submodule to specific version/commit"   # Commit the submo
 git push origin main           # Push the changes to the remote repository
 
 Remember, when working with submodules and updating them to specific versions or commits, you should commit these changes in the parent repository to update the reference to the specific commit of the submodule. This ensures that others who clone your repository will get the correct submodule version.
+
+
+Working on a Submodule:
+
+git submodule update --remote --merge
+
+git submodule update --remote --rebase
+
+
+Pushing changes:
+
+git push --recurse-submodules=check
+
+Make it default:
+git config push.recurseSubmodules check
+
+push changes of submodules before pushing the main project:
+
+git push --recurse-submodules=on-demand
